@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header {
+  background-image: linear-gradient(to bottom, rgba(238, 214, 196, 0.1), rgba(107, 79, 70, 0.3));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: sticky;
+  top: 0%; }
+  header div img {
+    width: 68px;
+    padding-left: 1.25rem; }
+  header div nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3.5rem;
+    padding-right: 1.5rem;
+    height: 55px; }
+    header div nav ul li a {
+      text-decoration: none;
+      color: #311010;
+      font-size: 20px;
+      font-family: 'Playfair Display', serif;
+      font-weight: 600; }
