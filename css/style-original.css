@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&display=swap');
-
+/*
 *{
     padding: 0;
     margin: 0;
@@ -26,6 +26,7 @@ a{
     text-decoration: none;
     color: #311010;
 }
+*/
 .bg-custom{
     background-image: url('../assets/img/cafeBackground.png');
 }
@@ -35,6 +36,7 @@ a{
 .bg-6B4F4F{
     background-color: #6B4F4F;
 }
+/*
 .logo{
     width: 68px;
     padding-left: 1.25rem;
@@ -67,12 +69,14 @@ a{
     flex-direction: column;
     grid-area: titulo;
 }
+
 .titulo h1{
     font-size: 50px;
     color: #EED6C4;
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
+*/
 .titulo h2{
     font-size: 35px;
     color: #EED6C4;
