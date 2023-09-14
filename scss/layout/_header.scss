@@ -1,9 +1,6 @@
 header{
     background-image: linear-gradient(to bottom, rgba(238, 214, 196, 0.1), rgba(107, 79, 70, 0.3));
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row, nowrap, space-between, center, 0);
     width: 100%;
     position: sticky;
     top: 0%;
@@ -16,10 +13,10 @@ header{
     div{
         nav{
             ul{
-                display: flex;
-                list-style: none;
+                display: flex;               
                 align-items: center;
                 gap: 3.5rem;
+                list-style: none;
                 padding-right: 1.5rem;
                 height: 55px;
                 li{

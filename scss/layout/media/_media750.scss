@@ -1,0 +1,18 @@
+@media(max-width: 750px){
+    .main-contacto{
+        div{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3,auto);
+            grid-template-areas: "titulo" "contactos" "mapa";
+            .contactos1{
+                margin: 0 auto;
+                height: 31.25rem;
+                width: 25rem;
+                padding-left: 0;
+            }
+            .contactos2{
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}

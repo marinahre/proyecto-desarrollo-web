@@ -1,0 +1,11 @@
+@media(max-width: 775px){
+    .main-tienda{
+        div{
+            grid-template-columns: 1fr;
+            grid-template-areas: auto;
+            .tienda{
+                justify-content: center;
+            }
+        }
+    }
+}

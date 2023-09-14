@@ -1,0 +1,26 @@
+@media(max-width: 404px){
+    header{
+        width: 100%;
+        position: static;
+        div{
+            nav{
+                ul{
+                    align-items: center;
+                }
+            }
+        }
+    }
+    .main-contacto{
+        div{
+            .contactos1{
+                width: 17.5rem;
+            }
+            .contactos2{
+                iframe{
+                    width: 20rem;
+                    height: 18.75rem;
+                }
+            }
+        }
+    }
+}

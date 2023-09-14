@@ -1,0 +1,29 @@
+@media(max-width: 1000px){
+    .main-about{
+        .nosotros{
+            div{
+                flex-direction: column;
+            }
+        }
+    }
+    .main-contacto{
+        div{
+            .contactos1{
+                padding-top: .5rem;
+                padding-right: 3rem;
+                padding-left: 7rem;
+                padding-bottom: 4rem;
+                h3{
+                    text-align: center;
+                }
+            }
+            .contactos2{
+                padding-left: 5rem;
+                padding-top: .5rem;
+                padding-right: 6rem;
+                align-items: center;
+                gap: 1.7rem;
+            }
+        }
+    }
+}

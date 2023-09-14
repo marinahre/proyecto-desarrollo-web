@@ -1,0 +1,12 @@
+footer{
+    background-image: linear-gradient(to top, rgba(238, 214, 196, 0.1), rgba(49, 16, 16, 0.4));
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    p{
+        color: $sec-font-color;
+        font-family: $main-font-family;
+        text-align: end;
+        padding-right: .5rem;
+    }
+}

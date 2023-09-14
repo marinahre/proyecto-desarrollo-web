@@ -1,0 +1,16 @@
+@media(max-width: 448px){
+    header{
+        div{
+            nav{
+                ul{
+                    gap: 1.8rem;
+                    li{
+                        a{
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

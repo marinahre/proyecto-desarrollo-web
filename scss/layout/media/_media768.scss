@@ -1,0 +1,53 @@
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        width: 100%;
+        div{
+            img{
+                padding-left: 0;
+                width: 3.375rem;
+            }
+        }
+        div{
+            .navbar{
+                padding-right: none;
+            }
+        }
+    }
+
+    .main-index{
+        .section1 p{
+            font-size: 18px;
+        }
+        .section2{
+            article{
+                img{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+        .section3{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+    }
+    .main-tienda{
+        div{
+            .tienda{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+    .main-contacto{
+        div{
+            .contactos1{
+                padding-left: 1.8rem;
+            }
+            .contactos2{
+                padding-right: .4rem;
+            }
+        }
+    }
+}

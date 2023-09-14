@@ -1,0 +1,64 @@
+.main-contacto{
+    div{
+        @include grid (100%, 100vh, repeat(33%), 40% 60%, "titulo titulo titulo" "contactos body mapa");
+        .titulo{
+            background-image: url('../assets/img/cafeBackground.png');
+            width: 100%;
+            height: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @include flex(column, nowrap, center, center, 0);
+            grid-area: titulo;
+            overflow: hidden;
+            h1{
+                font-size: 50px;
+                color: $sec-font-color;
+                font-family: $main-font-family;
+                text-align: center;
+                animation-duration: 3s;
+                animation-name: slidein;
+            }
+        }
+        .contactos1{
+            padding-left: 13rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            @include flex(column, nowrap, none, none, 2rem);
+            grid-area: contactos;
+            h3{
+                background-image: linear-gradient(to right, #6B4F4F, rgba(238, 214, 196, 0.3), #6B4F4F);
+                color: $main-font-color;
+                font-size: 24px;
+                font-family: $main-font-family;
+                font-weight: bolder;
+                align-self: center;
+            }
+            div{
+                background-color: #311010;
+                @include flex (none, nowrap, none, center, 1rem);
+                img{
+                    height: 50px;
+                    width: 50px;
+                }
+                a{
+                    color: $sec-font-color;
+                    font-size: 16px;
+                    font-family: $main-font-family;
+                }
+            }
+        }
+        .contactos2{
+            @include flex (column, nowrap, none, center, 1.5rem);
+            padding-right: 10rem;
+            padding-top: 1.5rem;
+            grid-area: mapa;
+            h3{
+                background-image: linear-gradient(to right, #6B4F4F, rgba(238, 214, 196, 0.3), #6B4F4F);
+                color: $main-font-color;
+                font-size: 24px;
+                font-family: $main-font-family;
+                font-weight: bolder;
+            }
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@media(max-width: 599px){
+    header{
+        div{
+            nav{
+                ul{
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .main-index{
+        .section2{
+            .chemex{
+                padding-top: 2rem;
+            }
+        }
+    }
+    .main-about{
+        .nosotros{
+            img{
+                padding: 1rem;
+            }
+            p{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}

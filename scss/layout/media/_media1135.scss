@@ -1,0 +1,9 @@
+@media(max-width: 1135px){
+    .main-tienda{
+        div{
+            grid-template-columns: 50% 50%;
+            grid-template-areas: "tienda tienda";
+        }
+    }
+
+}

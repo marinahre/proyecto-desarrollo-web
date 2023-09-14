@@ -1,6 +1,7 @@
 @import "./utilities/variables";
 @import "./utilities/mixins";
 @import "./utilities/funciones";
+@import "./utilities/keyframes";
 
 
 @import "./base/reset";
@@ -9,13 +10,33 @@
 
 @import "./layout/body";
 @import "./layout/header";
+@import "./layout/footer";
 @import "./layout/main-index";
+@import "./layout/main-tienda";
+@import "./layout/main-contacto";
+@import "./layout/main-historia";
+@import "./layout/main-about";
 
 
 @import "./components/bootstrap";
-@import "./components/buttons";
 @import "./components/cards";
 
 
-/*Responsive ordenar en orden: desktop-tablet-mobile*/
-@import "./layout/media/media768"
+@import "./layout/media/media1135";
+@import "./layout/media/media1057";
+@import "./layout/media/media1024";
+@import "./layout/media/media1000";
+@import "./layout/media/media946";
+@import "./layout/media/media907";
+@import "./layout/media/media853";
+@import "./layout/media/media783";
+@import "./layout/media/media775";
+@import "./layout/media/media768";
+@import "./layout/media/media750";
+@import "./layout/media/media599";
+@import "./layout/media/media513";
+@import "./layout/media/media494";
+@import "./layout/media/media448";
+@import "./layout/media/media425";
+@import "./layout/media/media404";
+@import "./layout/media/media375";

@@ -1,0 +1,42 @@
+.main-about{
+    .titulo{
+        background-image: url('../assets/img/cafeBackground.png');
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex(column, nowrap, center, center, 0);
+        grid-area: titulo;
+        overflow: hidden;
+        h1{
+            font-size: 50px;
+            color: $sec-font-color;
+            font-family: $main-font-family;
+            text-align: center;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+    }
+    .nosotros{
+        @include flex(column, nowrap, none, center, 0);
+        img{
+            height: 350px;
+            padding: 2.5rem;
+        }
+        p{
+            color: $sec-font-color;
+            font-size: 18px;
+            padding-left: 7rem;
+            padding-right: 7rem;
+            font-family: $main-font-family;
+            align-self: center;
+        }
+        div{
+            flex-direction: row;
+            img:hover{
+                -webkit-transform:scale(1.3);
+                transform:scale(1.3);
+            }
+        }
+    }
+}

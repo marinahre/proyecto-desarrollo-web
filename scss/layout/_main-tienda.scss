@@ -1,0 +1,29 @@
+.main-tienda{
+    .titulo{
+        background-image: url('../assets/img/cafeBackground.png');
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        @include flex(column, nowrap, center, center, 0);
+        grid-area: titulo;
+        h1{
+            font-size: 3.125rem;
+            color: #EED6C4;
+            font-family: $main-font-family;
+            text-align: center;
+            animation-duration: 3s;
+            animation-name: slidein;
+        }
+    }
+    div{
+        @include grid(100%, 100vh, 33% 33% 33%, auto, "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda");
+        .tienda{
+            @include flex(none, wrap, space-between, none, 3rem);
+            padding: 4rem;
+            grid-area: tienda;
+            
+        }
+    }
+}

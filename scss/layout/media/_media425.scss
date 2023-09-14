@@ -1,0 +1,90 @@
+@media(max-width: 425px){
+    header{
+        flex-direction: column;
+        position: static;
+        align-content: center;
+        width: 100%;
+        overflow-x: hidden;
+        div{
+            nav{
+                ul{ 
+                    padding-right: 0; 
+                    flex-direction: column;
+                    height: auto;
+                    gap: 15px ;
+                    padding-bottom: 1rem;
+                    li{ 
+                        
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    body{
+        max-width: 100%;
+    }
+    .main-index{
+        .titulo{
+            height: 200px;
+            h1{
+                font-size: 32px;
+            }
+            p{
+                font-size: 24px;
+            }
+        }
+        .section1{
+            padding-left: 2rem;
+            padding-right: 1.5rem;
+        }
+        .section2{
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .section3{
+            padding-left: 1rem;
+            padding-right: .8rem;
+            p{
+                font-size: 17px;
+            }
+        }
+    }
+    .main-about{
+        .titulo{
+            height: 200px;
+            h1{
+                font-size: 32px;
+            }
+        }
+        .nosotros{
+            img{
+                height: 300px;
+            }
+            p{
+                font-size: 16px;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+            }
+        }
+    }
+    .card-tienda{
+        width: 250px;
+        padding-top: 0;
+    }
+    .main-contacto{
+        div{
+            .titulo{
+                height: 200px;
+                h1{
+                    font-size: 32px;
+                }
+                p{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
