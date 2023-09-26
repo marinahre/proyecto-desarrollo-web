@@ -189,7 +189,7 @@ footer {
     flex-direction: none;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: none;
+    align-items: center;
     gap: 3rem;
     padding: 4rem;
     grid-area: tienda; }
@@ -328,10 +328,12 @@ footer {
       font-family: 'Playfair Display', serif;
       font-weight: lighter; }
   .main-historia .historia .div2 img {
-    padding-right: 3.5rem;
-    padding-left: 5rem; }
+    width: 75%;
+    height: auto;
+    padding-left: 0;
+    padding-right: 3rem; }
   .main-historia .historia .div2 p {
-    padding-left: 3.5rem; }
+    padding-right: 1rem; }
 
 .main-about .titulo {
   background-image: url("../assets/img/cafeBackground.png");
@@ -387,6 +389,12 @@ footer {
 .bg-6B4F4F {
   background-color: #6B4F4F; }
 
+.container-fluid {
+  margin: 0 auto; }
+
+.font-family-base {
+  font-family: 'Playfair Display', serif; }
+
 .card-tienda {
   background-color: #EED6C4;
   width: 300px;
@@ -429,7 +437,27 @@ footer {
 @media (max-width: 1135px) {
   .main-tienda div {
     grid-template-columns: 50% 50%;
-    grid-template-areas: "tienda tienda"; } }
+    grid-template-areas: "tienda tienda"; }
+  .main-historia .historia .div1, .main-historia .historia .div2, .main-historia .historia .div3 {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+    padding-bottom: 2rem; }
+    .main-historia .historia .div1 p, .main-historia .historia .div2 p, .main-historia .historia .div3 p {
+      padding-left: 8rem;
+      padding-right: 8rem; }
+  .main-historia .historia .div2 {
+    flex-direction: column-reverse;
+    padding: 0;
+    padding-bottom: 2rem; }
+    .main-historia .historia .div2 p {
+      padding-left: 8rem;
+      padding-right: 8rem; }
+    .main-historia .historia .div2 img {
+      width: 70%; }
+  .main-historia .historia .div3 p {
+    padding-left: 8rem;
+    padding-right: 8rem; } }
 
 @media (max-width: 1057px) {
   .nosotros div {
@@ -439,7 +467,14 @@ footer {
 
 @media (max-width: 1024px) {
   .nosotros {
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+  .main-historia .historia .div1 p, .main-historia .historia .div2 p, .main-historia .historia .div3 p {
+    padding-left: 1.8rem;
+    padding-right: 4rem; }
+  .main-historia .historia .div2 p {
+    padding-left: 3.5rem; }
+  .main-historia .historia .div2 img {
+    padding-left: 1.5rem; } }
 
 @media (max-width: 1000px) {
   .main-about .nosotros div {
@@ -456,11 +491,15 @@ footer {
     padding-top: .5rem;
     padding-right: 6rem;
     align-items: center;
-    gap: 1.7rem; } }
+    gap: 1.7rem; }
+  .main-historia .historia .div2 img {
+    padding-right: 3rem; } }
 
 @media (max-width: 946px) {
   .main-contacto div .contactos2 {
-    gap: 4rem; } }
+    gap: 4rem; }
+  .main-historia .historia .div2 img {
+    width: 68%; } }
 
 @media (max-width: 907px) {
   .main-contacto div .contactos1 {
@@ -533,7 +572,28 @@ footer {
     padding: 1rem; }
   .main-about .nosotros p {
     padding-top: 2rem;
-    padding-bottom: 2rem; } }
+    padding-bottom: 2rem; }
+  .main-historia .historia .div1 p, .main-historia .historia .div2 p, .main-historia .historia .div3 p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .main-historia .historia .div2 p {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .main-historia .historia .div2 img {
+    width: 90%; }
+  .main-historia .historia .div3 p {
+    padding-left: 2rem;
+    padding-right: 2rem; } }
+
+@media (max-width: 537px) {
+  .main-historia .historia .div1, .main-historia .historia .div2, .main-historia .historia .div3 {
+    margin: 0 auto; }
+    .main-historia .historia .div1 img, .main-historia .historia .div2 img, .main-historia .historia .div3 img {
+      padding-right: 0;
+      padding-left: 0; }
+    .main-historia .historia .div1 p, .main-historia .historia .div2 p, .main-historia .historia .div3 p {
+      padding-right: 0;
+      padding-left: 0; } }
 
 @media (max-width: 513px) {
   header div nav ul {
@@ -545,7 +605,7 @@ footer {
     font-size: 15px; }
   .main-index .section1 {
     flex-direction: column;
-    padding-right: 0; }
+    padding-right: 1.5rem; }
   .main-index .section3 {
     padding-left: 3rem;
     padding-right: 2rem; }
@@ -632,6 +692,9 @@ footer {
     .main-contacto div .contactos2 iframe {
       width: 17.5rem;
       height: 14.375rem; }
-  .card-tienda {
-    justify-content: center;
-    position: static; } }
+  .main-tienda div .tienda {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  .main-historia .historia .div2 img {
+    width: 100%; } }

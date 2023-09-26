@@ -5,5 +5,36 @@
             grid-template-areas: "tienda tienda";
         }
     }
-
+    .main-historia{
+        .historia{
+            .div1{
+                flex-direction: column;
+                padding: 0;
+                gap: 2rem;
+                padding-bottom: 2rem;
+                p{
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+            }
+            .div2{
+                flex-direction: column-reverse;
+                padding: 0;
+                padding-bottom: 2rem;
+                p{
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+                img{
+                    width: 70%;
+                }
+            }
+            .div3{
+                p{
+                    padding-left: 8rem;
+                    padding-right: 8rem;
+                }
+            }
+        }
+    }
 }

@@ -20,7 +20,7 @@
     div{
         @include grid(100%, 100vh, 33% 33% 33%, auto, "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda");
         .tienda{
-            @include flex(none, wrap, space-between, none, 3rem);
+            @include flex(none, wrap, space-between, center, 3rem);
             padding: 4rem;
             grid-area: tienda;
             

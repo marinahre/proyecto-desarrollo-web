@@ -48,11 +48,13 @@
         .div2{
             @extend .div1;
             img{
-                padding-right: 3.5rem;
-                padding-left: 5rem;
+                width: 75%;
+                height: auto;
+                padding-left: 0;
+                padding-right: 3rem;
             }
             p{
-                padding-left: 3.5rem
+                padding-right: 1rem;
             }
         }
         .div3{
