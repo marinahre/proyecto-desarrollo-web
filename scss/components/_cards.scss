@@ -36,10 +36,12 @@
         padding: 10px 20px;
         border-radius: 25px;
         border-color: #EED6C4;
-        a{
-            text-decoration: none;
-            color: #EED6C4;
-            font-family: 'Playfair Display', serif;
+        border-style: solid;
+        text-decoration: none;
+        color: #EED6C4;
+        font-family: 'Playfair Display', serif;
+        &:hover{
+            cursor: pointer;
         }
     }
 }

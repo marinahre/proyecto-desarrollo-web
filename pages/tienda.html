@@ -9,6 +9,7 @@
     <meta name="language" content="Spanish">
     <title>TIENDA | Soffee</title>
     <link rel="shortcut icon" href="../assets/img/icono.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma/bulma.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -23,6 +24,7 @@
                     <li><a href="#">TIENDA</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./contactanos.html">CONTACTO</a></li>
+                    <li><button id="btn-logout">Cerrar sesión</button></li>
                 </ul>
             </nav>        
         </div>
@@ -32,6 +34,14 @@
                 <h1>TIENDA</h1>
             </section>
             <div>
+                <section class="carrito">
+                    <h2>Carrito de compras</h2>
+                    <ul id="lista">
+                        
+                    </ul>
+                    <button id="buy-cart">Comprar carrito</button>
+                    <button id="empty-cart">Vaciar carrito</button>
+                </section>
                 <section class="tienda">
                     <article class="card-tienda item1">
                         <img src="../assets/img/prensa-francesa.png" alt="" class="img-card-tienda">
@@ -39,7 +49,7 @@
                             <h3>Prensa Francesa</h3>
                             <p>$11300</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p1">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item2">
                         <img src="../assets/img/cafetera-italiana.png" alt="" class="img-card-tienda">
@@ -47,7 +57,7 @@
                             <h3>Cafetera Italiana</h3>
                             <p>$48500</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p2">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item3">
                         <img src="../assets/img/cafetera-chemex.png" alt="" class="img-card-tienda">
@@ -55,7 +65,7 @@
                             <h3>Cafetera Chemex</h3>
                             <p>$54000</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p3">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item4">
                         <img src="../assets/img/cafe.jpg" alt="" class="img-card-tienda">
@@ -63,7 +73,7 @@
                             <h3>Café Brasil</h3>
                             <p>$3600</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p4">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item5">
                         <img src="../assets/img/cafe.jpg" alt="" class="img-card-tienda">
@@ -71,7 +81,7 @@
                             <h3>Café Colombia</h3>
                             <p>$4500</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p5">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item6">
                         <img src="../assets/img/cafe.jpg" alt="" class="img-card-tienda">
@@ -79,7 +89,7 @@
                             <h3>Café Perú</h3>
                             <p>$4200</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p6">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item7">
                         <img src="../assets/img/jarra.jpg" alt="" class="img-card-tienda">
@@ -87,7 +97,7 @@
                             <h3>Pitcher Basic</h3>
                             <p>$7500</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p7">Agregar al carrito</button>
                     </article>
                     <article class="card-tienda item8">
                         <img src="../assets/img/tamper.jpg" alt="" class="img-card-tienda">
@@ -95,21 +105,24 @@
                             <h3>Tamper Madera</h3>
                             <p>$32700</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p8">Agregar al carrito</button>
                     </article>
-                    <article class="card-tienda item9Agregar al carrito">
+                    <article class="card-tienda item9">
                         <img src="../assets/img/cafetera-chemex.png" alt="" class="img-card-tienda">
                         <div>
                             <h3>Filtro de tela</h3>
                             <p>$11500</p>
                         </div>
-                        <button><a href="">Agregar al carrito</a></button>
+                        <button id="cart-p9">Agregar al carrito</button>
                     </article>
                 </section>
             </div>
         </main>
         <footer>
             <p>2023 Soffee®</p>
-        </footer>      
+        </footer>  
+        <script src="../JS/cart.js"></script> 
+        <script src="../JS/logout.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </body>
 </html>

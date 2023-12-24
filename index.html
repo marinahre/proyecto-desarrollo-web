@@ -12,53 +12,59 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <img src="./assets/img/frenchPress.png" alt="logo">
-        </div>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="./pages/tienda.html">TIENDA</a></li>
-                    <li><a href="./pages/about.html">ABOUT</a></li>
-                    <li><a href="./pages/contactanos.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main class="main-index">
-        <section class="titulo">
-                <h1>SOFFEE</h1>
-                <p>Tu refugio del día a día,<br>en cada taza</p>
-        </section>
-        <section class="section1">
-            <img src="./assets/img/coffee.png" alt="cartel neón coffee">
-            <p>Visita nuestra tienda en línea <a href="./pages/tienda.html">clickeando aquí</a> para explorar nuestro catálogo completo y hacer tus pedidos con comodidad desde tu hogar, ofrecemos <strong>envío rápido y seguro</strong> para que puedas disfrutar de tus insumos de café sin problemas.<br> Estamos aquí para hacer que tu experiencia con el café sea aún más especial.<br>¡Descubre todo lo que necesitas para disfrutar del café perfecto en <strong>Soffee</strong>!
-            </p>
-        </section>
-        <section class="section2">
-            <article>
-                <img src="./assets/img/prensa-francesa.png" alt="Prensa francesa">
-                <a href="./pages/prensa-francesa.html">Prensa Francesa</a>
-            </article>
-            <article>
-                <img src="./assets/img/cafetera-italiana.png" alt="Cafetera italiana">
-                <a href="./pages/cafetera-italiana.html">Cafetera Italiana</a>
-            </article>
-            <article class="chemex">
-                <img src="./assets/img/cafetera-chemex.png" alt="Cafetera chemex">
-                <a href="./pages/cafetera-chemex.html">Cafetera Chemex</a>
-            </article>
-        </section>
-        <div class="section3">
-            <img src="./assets/img/coffee-bean (1).png" alt="">
-            <p>En <strong>Soffee</strong>, compartimos tu amor por el café y estamos aquí para satisfacer todas tus necesidades de insumos y accesorios de café.<br>Nuestra misión es proporcionar a los amantes del café productos de la más <strong>alta calidad</strong> y las herramientas necesarias para crear la experiencia de café perfecta en casa o en tu negocio. Sabemos que el café es más que una bebida, es una pasión. Gracias por permitirnos ser parte de tu viaje cafetero. ¡Esperamos verte pronto!</p>
-        </div>
-
-    </main>
-    <footer>
-        <p>2023 Soffee®</p>
-    </footer>
+        <header>
+            <div>
+                <img src="./assets/img/frenchPress.png" alt="logo">
+            </div>
+            <div>
+                <nav>
+                    <ul id="navbar">
+                        <li><a href="#">HOME</a></li>
+                        <div id="nav-tienda">
+                            <li><a href="./pages/tienda.html">TIENDA</a></li>
+                        </div>
+                        <li><a href="./pages/about.html">ABOUT</a></li>
+                        <li><a href="./pages/contactanos.html">CONTACTO</a></li>
+                        <li><button id="btn-logout">Cerrar sesión</button></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-index">
+            <div id="login"></div>
+            <section class="titulo">
+                    <h1>SOFFEE</h1>
+                    <p>Tu refugio del día a día,<br>en cada taza</p>
+            </section>
+            <section class="section1">
+                <img src="./assets/img/coffee.png" alt="cartel neón coffee">
+                <p>Visita nuestra tienda en línea para explorar nuestro catálogo completo y hacer tus pedidos con comodidad desde tu hogar, ofrecemos <strong>envío rápido y seguro</strong> para que puedas disfrutar de tus insumos de café sin problemas.<br> Estamos aquí para hacer que tu experiencia con el café sea aún más especial.<br>¡Descubre todo lo que necesitas para disfrutar del café perfecto en <strong>Soffee</strong>!
+                </p>
+            </section>
+            <section class="section2">
+                <article>
+                    <img src="./assets/img/prensa-francesa.png" alt="Prensa francesa">
+                    <a href="./pages/prensa-francesa.html">Prensa Francesa</a>
+                </article>
+                <article>
+                    <img src="./assets/img/cafetera-italiana.png" alt="Cafetera italiana">
+                    <a href="./pages/cafetera-italiana.html">Cafetera Italiana</a>
+                </article>
+                <article class="chemex">
+                    <img src="./assets/img/cafetera-chemex.png" alt="Cafetera chemex">
+                    <a href="./pages/cafetera-chemex.html">Cafetera Chemex</a>
+                </article>
+            </section>
+            <div class="section3">
+                <img src="./assets/img/coffee-bean (1).png" alt="">
+                <p>En <strong>Soffee</strong>, compartimos tu amor por el café y estamos aquí para satisfacer todas tus necesidades de insumos y accesorios de café.<br>Nuestra misión es proporcionar a los amantes del café productos de la más <strong>alta calidad</strong> y las herramientas necesarias para crear la experiencia de café perfecta en casa o en tu negocio. Sabemos que el café es más que una bebida, es una pasión. Gracias por permitirnos ser parte de tu viaje cafetero. ¡Esperamos verte pronto!</p>
+            </div>
+        </main>
+        <footer>
+            <p>2023 Soffee®</p>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="./JS/login.js"></script>
+    <script src="./JS/logout.js"></script>
 </body>
 </html>

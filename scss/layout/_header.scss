@@ -30,6 +30,32 @@ header{
                             color: #FFF3E4;
                         }                  
                     }
+                    button{
+                        background-color: #311010;
+                        font-size: 16px;
+                        padding: 10px 20px;
+                        border-radius: 25px;
+                        border-color: #EED6C4;
+                        border-style: solid;
+                        text-decoration: none;
+                        color: #EED6C4;
+                        font-family: 'Playfair Display', serif;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+                button{
+                    background-color: #eed6c400;
+                    padding: 0;
+                    border-radius: 100px;
+                    border-color: #eed6c400;
+                    img{
+                        width: 55px;
+                    }
+                }
+                .nav-tienda{
+                    display: none;
                 }
             }
         }

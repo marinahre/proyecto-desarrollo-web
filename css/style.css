@@ -45,6 +45,27 @@ header {
       font-weight: 600; }
       header div nav ul li a:hover {
         color: #FFF3E4; }
+    header div nav ul li button {
+      background-color: #311010;
+      font-size: 16px;
+      padding: 10px 20px;
+      border-radius: 25px;
+      border-color: #EED6C4;
+      border-style: solid;
+      text-decoration: none;
+      color: #EED6C4;
+      font-family: 'Playfair Display', serif; }
+      header div nav ul li button:hover {
+        cursor: pointer; }
+    header div nav ul button {
+      background-color: #eed6c400;
+      padding: 0;
+      border-radius: 100px;
+      border-color: #eed6c400; }
+      header div nav ul button img {
+        width: 55px; }
+    header div nav ul .nav-tienda {
+      display: none; }
 
 footer {
   background-image: linear-gradient(to top, rgba(238, 214, 196, 0.1), rgba(49, 16, 16, 0.4));
@@ -177,13 +198,46 @@ footer {
     animation-duration: 3s;
     animation-name: slidein; }
 
+.main-tienda .carrito {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1.2rem;
+  grid-area: cart; }
+  .main-tienda .carrito h2 {
+    font-family: "Playfair Display", serif;
+    color: #EED6C4; }
+  .main-tienda .carrito ul {
+    background-color: #EED6C4;
+    width: 23rem;
+    padding: 4.5rem; }
+    .main-tienda .carrito ul p {
+      font-family: "Playfair Display", serif;
+      color: #311010;
+      text-align: center; }
+    .main-tienda .carrito ul li {
+      font-family: "Playfair Display", serif;
+      color: #311010; }
+  .main-tienda .carrito button {
+    background-color: #311010;
+    font-size: 16px;
+    width: 23rem;
+    padding: .6rem;
+    border-color: #EED6C4;
+    border-style: solid;
+    color: #EED6C4;
+    font-family: 'Playfair Display', serif; }
+    .main-tienda .carrito button:hover {
+      cursor: pointer; }
+
 .main-tienda div {
   display: grid;
   width: 100%;
   height: 100vh;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: auto;
-  grid-template-areas: "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda"; }
+  grid-template-areas: "cart cart cart" "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda"; }
   .main-tienda div .tienda {
     display: flex;
     flex-direction: none;
@@ -380,6 +434,43 @@ footer {
       -webkit-transform: scale(1.3);
       transform: scale(1.3); }
 
+.main-login div {
+  background-color: #EED6C4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  padding-bottom: 3rem; }
+  .main-login div h1 {
+    padding-top: 1.5rem;
+    color: #311010;
+    font-family: "Playfair Display", serif; }
+  .main-login div div p {
+    color: #311010;
+    font-family: "Playfair Display", serif; }
+  .main-login div div .button {
+    background-color: #311010;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border-color: #EED6C4;
+    border-style: solid;
+    text-decoration: none;
+    color: #EED6C4;
+    font-family: 'Playfair Display', serif; }
+    .main-login div div .button:hover {
+      cursor: pointer; }
+
+.span-log {
+  background-color: #87c38f;
+  width: 100%;
+  color: #43291f;
+  font-family: 'Slabo 27px', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  display: flex;
+  justify-content: center; }
+
 .bg-custom {
   background-image: url("../assets/img/cafeBackground.png"); }
 
@@ -394,6 +485,9 @@ footer {
 
 .font-family-base {
   font-family: 'Playfair Display', serif; }
+
+.color-311010 {
+  color: #311010; }
 
 .card-tienda {
   background-color: #EED6C4;
@@ -428,11 +522,13 @@ footer {
     font-size: 16px;
     padding: 10px 20px;
     border-radius: 25px;
-    border-color: #EED6C4; }
-    .card-tienda button a {
-      text-decoration: none;
-      color: #EED6C4;
-      font-family: 'Playfair Display', serif; }
+    border-color: #EED6C4;
+    border-style: solid;
+    text-decoration: none;
+    color: #EED6C4;
+    font-family: 'Playfair Display', serif; }
+    .card-tienda button:hover {
+      cursor: pointer; }
 
 @media (max-width: 1135px) {
   .main-tienda div {

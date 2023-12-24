@@ -17,13 +17,51 @@
             animation-name: slidein;
         }
     }
+    .carrito{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 1.2rem;
+        grid-area: cart;
+        h2{
+            font-family: $main-font-family;
+            color: #EED6C4;
+        }
+        ul{
+            background-color: #EED6C4;
+            width: 23rem;
+            padding: 4.5rem;
+            p{
+                font-family: $main-font-family;
+                color: #311010;
+                text-align: center;
+            }
+            li{
+                font-family: $main-font-family;
+                color: #311010;
+            }
+        }
+        button{
+            background-color: #311010;
+            font-size: 16px;
+            width: 23rem;
+            padding: .6rem;
+            border-color: #EED6C4;
+            border-style: solid;
+            color: #EED6C4;
+            font-family: 'Playfair Display', serif;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
     div{
-        @include grid(100%, 100vh, 33% 33% 33%, auto, "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda");
+        @include grid(100%, 100vh, 33% 33% 33%, auto, "cart cart cart" "tienda tienda tienda" "tienda tienda tienda" "tienda tienda tienda");
         .tienda{
             @include flex(none, wrap, space-between, center, 3rem);
             padding: 4rem;
             grid-area: tienda;
-            
         }
     }
 }
